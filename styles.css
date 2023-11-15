@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffd700;
+}
+
+#fullpage {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.about-bg,
+.projects-bg,
+.contact-bg {
+    font-family: 'San Francisco', 'Arial', sans-serif;
+    font-size: 18px; 
+    font-weight: 400; 
+    line-height: 1.6; 
+}
+.about-bg {
+    background-color: #87CEEB;
+    background-size: cover;
+    background-position: center;
+}
+
+.skills-bg {
+    background-color: #90EE90;
+    background-image: url('img/tech.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.projects-bg {
+    background-color: #FFD700;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-bg {
+    background-color: #FFA07A;
+    background-size: cover;
+    background-position: center;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.project {
+    margin-bottom: 20px;
+   
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+    nav {
+        float: none;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .skill {
+        margin: 10px 0;
+    }
+}
+/* Icons styles */
+
+.contact-icons {
+    margin-top: 20px;
+}
+
+.contact-icons a {
+    text-decoration: none;
+    color: #333; /* Change the color as needed */
+    font-size: 24px;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.contact-icons a:hover {
+    color: #ffd700; /* Change the hover color as needed */
+}
